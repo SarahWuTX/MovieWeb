@@ -4,11 +4,11 @@
 
 [Course Assignment] 电影榜单页及详情页 Movie Rank List And Detail Page | Web Technology 2019 Spring
 
-[已部署到github pages上](https://sarahwutx.github.io/MovieWeb/)
+[已部署到服务器上](https://www.movie.sarahw.cn/#/)
 
 ### 运行环境
 
-前端：部署在github pages上
+前端：部署在服务器上，使用Nginx作为Web服务器
 
 后端：部署在服务器上，java语言编写，使用spring boot框架
 
