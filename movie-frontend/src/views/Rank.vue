@@ -49,7 +49,7 @@ export default {
   mounted() {
     var self = this;
     this.$axios
-      .get("/movie/getMovieCount")
+      .get(this.serverUrl + "/movie/getMovieCount")
       .then(response => {
         self.movieCount = response.data;
       })
@@ -67,7 +67,7 @@ export default {
       var self = this;
       if (this.fullData) {
         this.$axios
-          .get("/movie/getAll", {
+          .get(this.serverUrl + "/movie/getAll", {
             params: {
               page: self.currentPage - 1
             }
@@ -83,7 +83,7 @@ export default {
     getSearch() {
       var self = this;
       this.$axios
-        .get("/movie/search", {
+        .get(this.serverUrl + "/movie/search", {
           params: {
             keyword: self.search,
             page: self.currentPage - 1

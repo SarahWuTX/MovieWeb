@@ -8,6 +8,7 @@ import axios from "axios";
 Vue.config.productionTip = false;
 Vue.prototype.$axios = axios;
 Vue.use(ElementUI);
+Vue.prototype.serverUrl = "https://www.sarahw.cn";
 
 new Vue({
   router,

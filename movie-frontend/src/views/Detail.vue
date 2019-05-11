@@ -67,7 +67,7 @@ export default {
   mounted() {
     var self = this;
     this.$axios
-      .get("/movie/get", {
+      .get(this.serverUrl + "/movie/get", {
         params: {
           id: self.$route.params.id
         }
